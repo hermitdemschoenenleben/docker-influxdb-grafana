@@ -8,7 +8,7 @@ ENV LANG C.UTF-8
 # Default versions
 ENV INFLUXDB_VERSION=1.8.0
 ENV CHRONOGRAF_VERSION=1.9.0
-ENV GRAFANA_VERSION=9.2.3
+ENV GRAFANA_VERSION=10.1.5
 
 # Grafana database type
 ENV GF_DATABASE_TYPE=sqlite3
@@ -35,8 +35,8 @@ RUN rm /var/lib/apt/lists/* -vf \
         supervisor \
         wget \
         gnupg \
-    && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
-    && apt-get install -y nodejs \
+        nodejs \
+        musl \
     && mkdir -p /var/log/supervisor \
     && rm -rf .profile \
     # Install InfluxDB
