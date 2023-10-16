@@ -1,6 +1,6 @@
 # Docker Image with InfluxDB and Grafana
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/boboesterlin/docker-influxdb-grafana.svg)](https://dockerhub.com/boboesterlin/docker-influxdb-grafana) [![license](https://img.shields.io/github/license/oester/docker-influxdb-grafana.svg)](https://img.shields.io/github/license/oester/docker-influxdb-grafana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/highwaychile/docker-influxdb-grafana.svg)](https://dockerhub.com/highwaychile/docker-influxdb-grafana) [![license](https://img.shields.io/github/license/oester/docker-influxdb-grafana.svg)](https://img.shields.io/github/license/oester/docker-influxdb-grafana)
 
 
 ## Quick Start
@@ -15,7 +15,7 @@ docker run -d \
   -p 8086:8086 \
   -v /path/for/influxdb:/var/lib/influxdb \
   -v /path/for/grafana:/var/lib/grafana \
-  boboesterlin/docker-influxdb-grafana:latest
+  highwaychile/docker-influxdb-grafana:latest
 ```
 
 To stop the container launch:

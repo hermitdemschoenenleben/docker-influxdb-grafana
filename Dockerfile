@@ -1,6 +1,6 @@
 # FROM debian:stretch-slim
 FROM debian:stable-slim
-LABEL maintainer="Bob Oesterlin"
+LABEL maintainer="Benjamin Wiegand"
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C.UTF-8
